@@ -1,0 +1,38 @@
+/* InputBox.css */
+.input-container {
+    width: 100%;
+    max-width: 800px; /* Makes the container responsive */
+    height: auto;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+  }
+  
+  .input-box {
+    position: fixed;
+    top: 10%;
+    width: 80%;
+    max-width: 500px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 40px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    background: transparent;
+    color: white;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  .input-box:focus {
+    box-shadow: 0 0 15px white;
+    border-color: white;
+    outline: none;
+    transform: scale(1.05);
+  }
+  
+  .input-box::placeholder {
+    color: white;
+    opacity: 0.8;
+  }
+  
